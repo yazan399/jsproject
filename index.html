@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg  fixed-top">
+            <div class="container">
+                <div class="logo">
+                
+                    <a class="navbar-brand" href="#"> <img src="./images/navlogo.svg" /></a>
+                </div>
+                <div class="dark-mode">
+                    <button class="changeModeBtn">Dark Mode <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path d="M448 256c0-106-86-192-192-192l0 384c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                        </svg></button>
+                        <script src="./main.js"></script>
+                </div>
+                
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">MEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WOMAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">KIDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COLLECTION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TRENDS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Region
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">AUD</a></li>
+                                <li><a class="dropdown-item" href="#">CAD</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+       
+
+    </header>
+    <section class="welcome">
+        <div class="container">
+            <div class="row align-items-center vh-100">
+                <div class="col-md-6 col-sm-5 col-4">
+                    <h1 class="display-4">Make Your Style Looks Perfect</h1>
+                    <p class="lead">Our collection will help your fashion looks better and we will provide the best product for you.</p>
+                    <button class="sho-btn mt-4">Shop Now</button>
+
+                </div>
+                <div class="col-md-6 col-sm-5 col-4 text-center">
+                    <img src="./images/welcome.png" alt="Fashion Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="carouselup">
+        <h1 class="topic">Collection For Every moment in the year</h1>
+
+        <div id="carouselExampleIndicators" class="carousel slide vh-100">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                
+            </div>
+
+            <div class="carousel-inner h-100  text-white">
+                <div class="carousel-item h-100" style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./images/slider1.jpg);">
+                    <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                        <div class="carousel-box">
+                            <h4>Spring Bloom</h4>
+                            <h1>Fresh Looks for a New Season</h1>
+                            <p>Brighten up your wardrobe with our vibrant spring collection.</p>
+                            <button class="btn btn-outline-main"><a href="#">More</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item h-100 active" style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./images/slider2.jpg);">
+                    <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                        <div class="carousel-box">
+                            <h4>Autumn Essentials</h4>
+                            <h1>Layers of Comfort</h1>
+                            <p>Find your perfect autumn look with our latest arrivals.</p>
+                            <button class="btn btn-outline-main"><a href="#">More</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item h-100" style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./images/slider3.jpg);">
+                    <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                        <div class="carousel-box">
+                            <h4>Summer Collection</h4>
+                            <h1>Elegance in Every Step</h1>
+                            <p>Discover the latest trends with our summer collection.</p>
+                            <button class="btn btn-outline-main"><a href="#">More</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item h-100" style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./images/slider4.jpg);">
+                    <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                        <div class="carousel-box">
+                            <h4>Winter Warmers</h4>
+                            <h1>Stay Cozy, Stay Stylish</h1>
+                            <p>Embrace the cold with our warm, fashionable attire.</p>
+                            <button class="btn btn-outline-main"><a href="#">More</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <section class="fashion-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="explore-btn mt-4">Explore Now</button>
+
+                    <img src="./images/bestt1.jpg" alt="Fashion Image" class="fashion-img col-xl-10 col-lg-9">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h1 class="fashion-title">Best Fashion Brand</h1>
+                    <p class="fashion-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Sed Ullamcorper Congue Eros, Eget Tincidunt Ipsum Eleifend Ut. Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit Sed Ullamcorper Congue Eros Eleifend Ut Tincidunt Ipsum.</p>
+                    <div class="fashion-stats">
+                        <div>
+                            <h4>250+</h4>
+                            <p>Store Branches</p>
+                        </div>
+                        <div>
+                            <h4>7000+</h4>
+                            <p>Product Sold</p>
+                        </div>
+                        <div>
+                            <h4>3900+</h4>
+                            <p>5 Star Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="comments-section py-5">
+        <div class="container">
+                <h2 class="mb-4">User Comments</h2>
+            <div class="comments-container d-flex flex-wrap justify-content-between" >
+                <!-- Comments will be dynamically inserted here -->
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="deal-section d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column">
+                    <h1>Deal Of The Day</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
+                    <div class="timer">
+                        <div>
+                            <span>03</span><br>Day
+                        </div>
+                        <div>
+                            <span>08</span><br>Hour
+                        </div>
+                        <div>
+                            <span>09</span><br>Minute
+                        </div>
+                    </div>
+                    <a href="#" class="shop-btn">SHOP NOW</a>
+                </div>
+                <div class="col-md-6 deal-image">
+                    <img src="./images/dealofday.png" alt="Deal Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="faqs">
+        <div class="container">
+
+        <h1>FAQ’s</h1>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        What sizes do you offer?                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                    <div class="accordion-body">
+                        <p class="answer">We offer a wide range of sizes, from XXS to 3XL, to cater to all body types. Specific size availability may vary by product. Please refer to our size guide for detailed measurements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I find the right size?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="answer">To find your perfect fit, use our size guide available on each product page. We recommend measuring yourself and comparing your measurements with our guide for the best match.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-a" aria-expanded="false" aria-controls="collapse-a">
+                        What is your return and exchange policy?
+                    </button>
+                </h2>
+                <div id="collapse-a" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="answer">We offer a hassle-free return and exchange policy within 30 days of purchase. Items must be unworn, unwashed, and in their original condition with tags attached. Please visit our returns page for more details.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-b" aria-expanded="false" aria-controls="collapse-b">
+                        How long does shipping take?
+                    </button>
+                </h2>
+                <div id="collapse-b" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="answer">Standard shipping typically takes 3-7 business days. Expedited options are also available at checkout. Please note that shipping times may vary depending on your location.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-c" aria-expanded="false" aria-controls="collapse-c">
+                        Do you ship internationally?
+                    </button>
+                </h2>
+                <div id="collapse-c" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="answer">Yes, we ship to most countries worldwide. International shipping fees and delivery times vary by destination. Please check our shipping information page for more details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-d" aria-expanded="false" aria-controls="collapse-d">
+                        How can I track my order?
+                    </button>
+                </h2>
+                <div id="collapse-d" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="answer">
+                            Once your order is shipped, you will receive a tracking number via email. You can use this number to track your order on our website or through the carrier's website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-e" aria-expanded="false" aria-controls="collapse-e">
+                        What payment methods do you accept?                    </button>
+                </h2>
+                <div id="collapse-e" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="answer">We accept major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, and Google Pay. For international customers, additional payment methods may be available at checkout.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-f" aria-expanded="false" aria-controls="collapse-f">
+                        What should I do if I receive a damaged or incorrect item?
+                    </button>
+                </h2>
+                <div id="collapse-f" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="answer">If you receive a damaged or incorrect item, please contact our customer service team immediately. We will arrange for a replacement or refund as quickly as possible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-i" aria-expanded="false" aria-controls="collapse-i">
+                        IHow do I use a promo code or discount?
+                    </button>
+                </h2>
+                <div id="collapse-i" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="answer">
+                            You can enter your promo code at checkout in the "Discount Code" box. The discount will be applied to your total before payment. Only one promo code can be used per order.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-j" aria-expanded="false" aria-controls="collapse-j">
+                        Do you offer any sustainability initiatives?
+                    </button>
+                </h2>
+                <div id="collapse-j" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                    <div class="accordion-body">
+                        <p class="answer">Yes, we are committed to sustainable fashion. We use eco-friendly materials and packaging and partner with organizations focused on reducing environmental impact. Learn more about our initiatives on our sustainability page.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-k" aria-expanded="false" aria-controls="collapse-k">
+                        What should I do if I have questions about a product?
+                    </button>
+                </h2>
+                <div id="collapse-k" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="answer">
+                            If you have any questions about a product, feel free to contact our customer service team via email, chat, or phone. We’re here to help with any inquiries you may have.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    </section>
+
+
+    <section class="contact ">
+        <div class="container">
+            <h1>Contact</h1>
+            <div class="contact-info">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="address d-flex gap-4 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#6600ee" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path>
+                            </svg>
+                            <div class="address-info">
+                                <h3>Location : </h3>
+                                <address>A 108 Adam Street New Yourk, NY 535022</address>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="email d-flex gap-4 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#6600ee" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path>
+                            </svg>
+                            <div class="email-info">
+                                <h3>Email : </h3>
+                                <a href="#">fashion-eccomerce@outlook.com</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="phone d-flex gap-4 align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#6600ee" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path>
+                            </svg>
+                            <div class="phone-info">
+                                <h3>Phone : </h3>
+                                <a href="#">560-667-0884</a><br>
+                                <a href="#">017-889-0892</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <form class="d-flex flex-column gap-4">
+                <div class="groups d-flex gap-4">
+                    <div class="name form-floating w-100">
+                        <input type="text" class="form-control" id="name">
+                        <label for="name">Your Name</label>
+                    </div>
+    
+                    <div class="email form-floating w-100">
+                        <input type="email" class="form-control" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                </div>
+    
+                <div class="message form-floating w-100">
+                    <textarea class="form-control" id="message" spellcheck="false" data-ms-editor="true"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+    
+                <button type="submit" class="btn btn-outline-main w-100">Send Message</button>
+            </form>
+        </div>
+        
+    </section>
+
+
+
+    <section class="sign-in">
+        <div class="container">
+            <h1>Sign In</h1>
+            <form class="row g-3 needs-validation" novalidate="">
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" required="" spellcheck="false" data-ms-editor="true">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" required="" spellcheck="false" data-ms-editor="true">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Username</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required="" spellcheck="false" data-ms-editor="true">
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validationCustom03" required="" spellcheck="false" data-ms-editor="true">
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">State</label>
+                    <select class="form-select" id="validationCustom04" required="">
+                        <option selected="" disabled="" value="">Choose...</option>
+                        <option value="palestine">Palestine</option>
+                        <option value="jordan">Jordan</option>
+                        <option value="lebanon">Lebanon</option>
+                        <option value="usa">USA</option>
+                        <option value="england">England</option>
+                        <option value="spain">Spain</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="ksa">KSA</option>
+                        <option value="uae">UAE</option>
+                        <option value="netherland">Netherland</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="validationCustom05" required="" spellcheck="false" data-ms-editor="true">
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Sign in</button>
+                </div>
+            </form>
+        </div>
+        
+
+    </section>
+    
+    <footer class="footer ">
+        <div class="container">
+                <div class="row">
+                        <div class="footer-left">
+                            <div class="logo">
+                                <a class="navbar-brand" href="#">
+                                    <img  src="./images/Logofooter.png" width="20px" />
+                                </a>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                 mollis, justo nec porttitor auctor, erat sapien faucibus lectus,
+                                 vel tempor dolor augue et lectus. 
+                            </p>
+                            <div class="icons">
+                                <a href="#"> 
+                                    <img src="./images/facebook.svg" />
+                                </a>
+                                <a href="#"> 
+                                    <img src="./images/Twitter.svg" />
+                                </a>
+                                <a href="#"> 
+                                    <img src="./images/linkedin.svg" />
+                                </a>
+                                <a href="#"> 
+                                    <img src="./images/Vector.svg" />
+                                </a>
+    
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="footer-right">
+                            <div class="footer-item">
+                                <h2>Company</h2>
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="#">About Us</a>
+    
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">Career</a>
+    
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">Blog</a>
+    
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">FAQ's</a>
+    
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+    
+                            <div class="footer-item">
+                                <h2>Need Help?</h2>
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">Shipping Services</a>
+    
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">Payment Options</a>
+    
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">Unsubscribe</a>
+    
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+    
+                            <div class="footer-item">
+                                <h2>Article</h2>
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="#">New</a>
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">Old</a>
+    
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">Trend</a>
+    
+                                        </li>
+    
+                                        <li>
+                                            <a href="#">Popular</a>
+    
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+    
+                            <div class="footer-item">
+                               
+                            </div>
+    
+    
+                        </div>
+    
+    
+                </div>
+    
+    
+        </div>
+    
+    
+    </footer>
+
+
+
+
+    <script  src="./main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
